@@ -13,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.example.testapp.ui.theme.TestAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -45,7 +46,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 fun GreetingPreview() {
     TestAppTheme {
         Surface(color = Color.Cyan) {
-            Greeting("Richard")
+            Greeting("Richard", modifier = Modifier.padding(24.dp))
         }
     }
 }
